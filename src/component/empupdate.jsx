@@ -14,7 +14,7 @@ function UpdateEmployee() {
       return;
     }
     try {
-      const res = await axios.get(`http://localhost:5000/byid/${id}`);
+      const res = await axios.get(`https://hrmsbackend-xn4j.onrender.com/byid/${id}`);
       setEmployee(res.data);
       setError("");
       setMessage("");
@@ -31,7 +31,7 @@ function UpdateEmployee() {
 
   const handleUpdate = async () => {
     try {
-      const res = await axios.put(`http://localhost:5000/updateemp/${id}`, employee);
+      const res = await axios.put(`https://hrmsbackend-xn4j.onrender.com/updateemp/${id}`, employee);
       setMessage(res.data.message);
       setError("");
       console.log("update controlll hit")

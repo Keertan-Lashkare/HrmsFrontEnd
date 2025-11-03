@@ -14,7 +14,7 @@ const EmpLeaveRecord = () => {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/empleave/${empId}`);
+      const response = await axios.get(`https://hrmsbackend-xn4j.onrender.com/empleave/${empId}`);
       if (response.data.length === 0) {
         setMessage(" No leave records found.");
         setLeaves([]);

@@ -10,7 +10,7 @@ const Applicationlist = () => {
   useEffect(() => {
     const fetchApplications = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/applicationlist");
+        const res = await axios.get("https://hrmsbackend-xn4j.onrender.com/applicationlist");
         setApplications(res.data.applications || []);
       } catch (err) {
         console.error("Error fetching applications:", err);
@@ -25,7 +25,7 @@ const Applicationlist = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.put(`http://localhost:5000/updateapplication/${id}`, { status });
+      await axios.put(`https://hrmsbackend-xn4j.onrender.com/updateapplication/${id}`, { status });
       setApplications((prev) =>
         prev.map((app) =>
           app.applicationId === id ? { ...app, status } : app

@@ -20,7 +20,7 @@ const EmpRecord = () => {
     setSearched(true);
 
     try {
-      const response = await axios.get(`http://localhost:5000/byemp/${employeeId}`);
+      const response = await axios.get(`https://hrmsbackend-xn4j.onrender.com/byemp/${employeeId}`);
       setAttendanceData(response.data);
     } catch (err) {
       console.error("Error fetching attendance:", err);

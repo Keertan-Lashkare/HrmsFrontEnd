@@ -9,7 +9,7 @@ const LeaveList = () => {
   
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/leavelist");
+      const response = await axios.get("https://hrmsbackend-xn4j.onrender.com/leavelist");
       setLeaves(response.data);
     } catch (error) {
       console.error(" Error fetching leaves:", error);
@@ -25,7 +25,7 @@ const LeaveList = () => {
 
   const updateLeaveStatus = async (id, newStatus) => {
     try {
-      await axios.put(`http://localhost:5000/updateleave/${id}/status`, {
+      await axios.put(`https://hrmsbackend-xn4j.onrender.com/updateleave/${id}/status`, {
         status: newStatus,
       });
 

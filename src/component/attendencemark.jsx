@@ -27,7 +27,7 @@ const AttendanceForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/mark", formData);
+      const response = await axios.post("https://hrmsbackend-xn4j.onrender.com/mark", formData);
 
       setMessage(" Attendance marked successfully!");
       setFormData({

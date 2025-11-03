@@ -14,7 +14,7 @@ function SearchEmployee() {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5000/searchemp`, {
+      const response = await axios.get(`https://hrmsbackend-xn4j.onrender.com/searchemp`, {
         params: { query },
       });
       setEmployees(response.data);

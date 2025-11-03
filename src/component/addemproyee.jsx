@@ -26,7 +26,7 @@ function AddEmployee() {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/addemp", employee);
+      const response = await axios.post("https://hrmsbackend-xn4j.onrender.com/addemp", employee);
       alert(response.data.message || " Employee added successfully!");
       console.log("Server Response:", response.data);
 

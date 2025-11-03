@@ -10,7 +10,7 @@ const AttendanceList = () => {
   useEffect(() => {
     const fetchAttendance = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/record");
+        const response = await axios.get("https://hrmsbackend-xn4j.onrender.com/record");
         setAttendanceData(response.data);
         setLoading(false);
       } catch (err) {

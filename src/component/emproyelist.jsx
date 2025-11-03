@@ -10,7 +10,7 @@ const EmployeeList = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/listemp");
+        const res = await axios.get("https://hrmsbackend-xn4j.onrender.com/listemp");
         setEmployees(res.data);
       } catch (error) {
         console.error(" Error fetching employees:", error);

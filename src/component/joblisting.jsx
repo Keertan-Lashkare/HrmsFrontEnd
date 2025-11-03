@@ -14,7 +14,7 @@ const Joblist = () => {
 
   const fetchJobs = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/listjob");
+      const response = await axios.get("https://hrmsbackend-xn4j.onrender.com/listjob");
       setJobs(response.data);
     } catch (err) {
       setError("Failed to fetch jobs ❌");
@@ -30,7 +30,7 @@ const Joblist = () => {
     if (!confirmDelete) return;
 
     try {
-      await axios.delete(`http://localhost:5000/closejob/${id}`);
+      await axios.delete(`https://hrmsbackend-xn4j.onrender.com/closejob/${id}`);
       alert(" Job deleted successfully!");
       fetchJobs(); // refresh list
     } catch (err) {

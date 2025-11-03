@@ -37,7 +37,7 @@ const Applyjob = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/addjob", formData);
+      const response = await axios.post("https://hrmsbackend-xn4j.onrender.com/addjob", formData);
 
       if (response.status === 201) {
         setMessage("Job posted successfully!");

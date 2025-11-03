@@ -23,14 +23,14 @@ const ApplyLeave = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // basic validation
+
     if (!formData.employeeId || !formData.leaveType || !formData.startDate || !formData.endDate) {
       setMessage(" Please fill all required fields.");
       return;
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/applyleave", formData);
+      const response = await axios.post("https://hrmsbackend-xn4j.onrender.com/applyleave", formData);
       setMessage(" Leave applied successfully!");
       setFormData({
         employeeId: "",

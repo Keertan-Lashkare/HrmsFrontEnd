@@ -27,7 +27,7 @@ const Jobapply = () => {
     }
 
     try {
-      const res = await axios.post("http://localhost:5000/jobapply", formData);
+      const res = await axios.post("https://hrmsbackend-xn4j.onrender.com/jobapply", formData);
       setMessage(" Application submitted successfully!");
       console.log(res.data);
 
