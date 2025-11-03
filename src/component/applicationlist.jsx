@@ -25,7 +25,7 @@ const Applicationlist = () => {
 
   const handleStatusChange = async (id, status) => {
     try {
-      await axios.put(`https://hrmsbackend-xn4j.onrender.com/updateapplication/${id}`, { status });
+      await axios.put(`https://hrmsbackend-xn4j.onrender.com/updateapplication/${id}/${status}`, { status });
       setApplications((prev) =>
         prev.map((app) =>
           app.applicationId === id ? { ...app, status } : app
