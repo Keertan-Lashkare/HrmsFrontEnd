@@ -30,23 +30,23 @@ const hideNavbar = location.pathname === "/login" || location.pathname === "/";
       {!hideNavbar && <Navbar />}
     
       <Routes>
-         <Route path="/" element={<Login />} />   
-        <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<ProtecteXd><Dashboard /></ProtecteXd>    } />
-        <Route path="/addemproyee" element={<ProtecteXd><AddEmployee /></ProtecteXd>} />
-        <Route path="/emproyeelist" element={<ProtecteXd><EmployeeList /></ProtecteXd>} />
-         <Route path="/searchemproyee" element={<ProtecteXd><SearchEmployee/></ProtecteXd> } />
-         <Route path="/updateemproyee" element={<ProtecteXd><UpdateEmployee/></ProtecteXd> } />
-         <Route path="/mark" element={<ProtecteXd><AttendanceForm/></ProtecteXd> } />
-          <Route path="/record" element={<ProtecteXd><AttendanceList/></ProtecteXd> } />
-          <Route path="/byemp" element={<ProtecteXd><EmpRecord/></ProtecteXd> } />
-          <Route path="/applyleave" element={<ProtecteXd><ApplyLeave/></ProtecteXd> } />
-          <Route path="/empleave" element={<ProtecteXd><EmpLeaveRecord/></ProtecteXd> } />
-           <Route path="/leavelist" element={<ProtecteXd><LeaveList/></ProtecteXd> } />
-           <Route path="/addjob" element={<ProtecteXd><Applyjob/></ProtecteXd>} />
-            <Route path="/listjob" element={<ProtecteXd><Joblist/></ProtecteXd>} />
-              <Route path="/jobapply" element={<ProtecteXd><Jobapply/></ProtecteXd>} />
-               <Route path="/applicationlist" element={<ProtecteXd><Applicationlist/></ProtecteXd>} />
+         <Route path="https://hrmsfrontend-1.onrender.com/" element={<Login />} />   
+        <Route path="https://hrmsfrontend-1.onrender.com/login" element={<Login />} />
+        <Route path="https://hrmsfrontend-1.onrender.com/dashboard" element={<ProtecteXd><Dashboard /></ProtecteXd>    } />
+        <Route path="https://hrmsfrontend-1.onrender.com/addemproyee" element={<ProtecteXd><AddEmployee /></ProtecteXd>} />
+        <Route path="https://hrmsfrontend-1.onrender.com/emproyeelist" element={<ProtecteXd><EmployeeList /></ProtecteXd>} />
+         <Route path="https://hrmsfrontend-1.onrender.com/searchemproyee" element={<ProtecteXd><SearchEmployee/></ProtecteXd> } />
+         <Route path="https://hrmsfrontend-1.onrender.com/updateemproyee" element={<ProtecteXd><UpdateEmployee/></ProtecteXd> } />
+         <Route path="https://hrmsfrontend-1.onrender.com/mark" element={<ProtecteXd><AttendanceForm/></ProtecteXd> } />
+          <Route path="https://hrmsfrontend-1.onrender.com/record" element={<ProtecteXd><AttendanceList/></ProtecteXd> } />
+          <Route path="https://hrmsfrontend-1.onrender.com/byemp" element={<ProtecteXd><EmpRecord/></ProtecteXd> } />
+          <Route path="https://hrmsfrontend-1.onrender.com/applyleave" element={<ProtecteXd><ApplyLeave/></ProtecteXd> } />
+          <Route path="https://hrmsfrontend-1.onrender.com/empleave" element={<ProtecteXd><EmpLeaveRecord/></ProtecteXd> } />
+           <Route path="https://hrmsfrontend-1.onrender.com/leavelist" element={<ProtecteXd><LeaveList/></ProtecteXd> } />
+           <Route path="https://hrmsfrontend-1.onrender.com/addjob" element={<ProtecteXd><Applyjob/></ProtecteXd>} />
+            <Route path="https://hrmsfrontend-1.onrender.com/listjob" element={<ProtecteXd><Joblist/></ProtecteXd>} />
+              <Route path="https://hrmsfrontend-1.onrender.com/jobapply" element={<ProtecteXd><Jobapply/></ProtecteXd>} />
+         <Route path="https://hrmsfrontend-1.onrender.com/applicationlist" element={<ProtecteXd><Applicationlist/></ProtecteXd>} />
               
 
 
